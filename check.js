@@ -1,17 +1,17 @@
-let nameInput = document.querySelector('#name');
+锘縧et nameInput = document.querySelector('#name');
 let btnSubmit = document.querySelector('#btn-submit');
 let welcomeMessage = document.querySelector('#welcome-message');
 let welcomeName = document.querySelector('#welcome-name');
 
 btnSubmit.onclick = function() {
-    let nameValue = nameInput.value.trim(); // 获取输入框中的值并去除首尾空白
+    let nameValue = nameInput.value.trim(); // 鑾峰彇杈撳叆妗嗕腑鐨勫�煎苟鍘婚櫎棣栧熬绌虹櫧
 
-    if (nameValue === "ceshi") {
-        welcomeName.textContent = nameValue; // 设置欢迎消息中的姓名
-        welcomeMessage.style.display = 'block'; // 显示欢迎消息
+    if (nameValue === "ceshiwwh") {
+        welcomeName.textContent = "娴嬭瘯鍛樼帇鐐滅殦"; // 璁剧疆娆㈣繋娑堟伅涓殑濮撳悕
+        welcomeMessage.style.display = 'block'; // 鏄剧ず娆㈣繋娑堟伅
         setTimeout(function() {
             window.location.href = "./main.html";
-        }, 3000); // 延迟3秒跳转到index.html
+        }, 1500); // 寤惰繜1.5绉掕烦杞埌index.html
     } else {
         window.location.href = "./index.html";
     }
